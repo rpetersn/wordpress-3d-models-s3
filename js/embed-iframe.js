@@ -1,4 +1,4 @@
-// function to split up src values
+// simple function to split up src values
 function parseQueryString(queryString) {
     var params = {};
     if (queryString) {
