@@ -39,12 +39,16 @@ wp3diframewrap.removeChild(divoriganchor); // remove the anchor
 
 // generate some content
 var wp3dmobilecss = "<style>
-#"+params.id+"{ position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+#"+params.id+"{ position: relative; padding-bottom: 65%; height: 0; overflow: hidden; max-width: 100%; } 
 #"+params.id+" iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; }
-@media (min-width: 481px) and (max-width: 767px) { #"+params.id+" { padding-bottom: 65%;} }
-@media (min-width: 768px) and (max-width: 1023px) { #"+params.id+" { padding-bottom: 80%;} }
-@media only screen and (max-width : 480px) { #"+params.id+" { padding-bottom: 140%;} }
-@media (min-width: 1500px) { #"+params.id+" { padding-bottom: 45%;} }
+@media (max-width: 767px) { #"+params.id+" { padding-bottom: 165%;} }
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) { #"+params.id+" { padding-bottom: 60%;} }
+//Necessary?
+//@media (min-width: 481px) and (max-width: 767px) { #"+params.id+" { padding-bottom: 60%;} }
+@media (min-width: 768px) and (max-width: 1023px) { #"+params.id+" { padding-bottom: 98%;} }
+//Necessary?
+//@media only screen and (max-width : 480px) { #"+params.id+" { padding-bottom: 165%;} }
+@media (min-width: 1500px) { #"+params.id+" { padding-bottom: 50%;} }
 
 </style>";
 var wp3diframe = '<iframe src="'+frameurl+'" frameborder="0" allowfullscreen></iframe>';
