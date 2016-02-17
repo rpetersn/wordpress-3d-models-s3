@@ -48,7 +48,7 @@ var wp3dmobilecss = "<style>"+
 "@media (min-width: 768px) and (max-width: 1023px) { #"+params.id+" { padding-bottom: 98%;} }"+
 //Necessary?
 //@media only screen and (max-width : 480px) { #"+params.id+" { padding-bottom: 165%;} }
-"@media (min-width: 1500px) { #"+params.id+" { padding-bottom: 50%;} }"+
+"@media (min-width: 1500px) { #"+params.id+" { padding-bottom: 60%;} }"+
 "</style>";
 
 var wp3diframe = '<iframe src="'+frameurl+'" frameborder="0" allowfullscreen></iframe>';
